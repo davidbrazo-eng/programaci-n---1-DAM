@@ -17,5 +17,10 @@ public class Ejercicio8 {
 		}
 			
 		sc.close();
+		
+		
+		
+		
+		
 		}
 	}

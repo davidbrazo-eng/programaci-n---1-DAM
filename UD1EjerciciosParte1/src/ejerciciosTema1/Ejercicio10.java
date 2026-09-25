@@ -17,6 +17,7 @@ public class Ejercicio10 {
 		}
 		
 		sc.close();
+		System.out.println("holaaa");
 	}
 
 }
