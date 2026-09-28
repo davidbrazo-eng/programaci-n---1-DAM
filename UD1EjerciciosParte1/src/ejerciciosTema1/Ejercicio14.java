@@ -3,18 +3,26 @@ import java.util.Scanner;
 
 public class Ejercicio14 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
-		System.out.println("Dime la nota del primer trimestre:");
-		Integer primerTrimestre = sc.nextInt();
-		
-		System.out.println("Dime la nota del segundo trimestre:");
-		Integer segundoTrimestre = sc.nextInt();
-		
-		System.out.println("Dime la nota del tercer trimestre: ");
-		Integer tercerTrimestre = sc.nextInt();
-		
-		System.out.println("La nota media del curso en el boletin es: " + (primerTrimestre+segundoTrimestre+tercerTrimestre) / 3);
-		
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Introduce la nota del primer trimestre: ");
+        int nota1 = sc.nextInt();
+
+        System.out.print("Introduce la nota del segundo trimestre: ");
+        int nota2 = sc.nextInt();
+
+        System.out.print("Introduce la nota del tercer trimestre: ");
+        int nota3 = sc.nextInt();
+
+        double media = (nota1 + nota2 + nota3) / 3.0;
+
+        int mediaBoletin = (int) Math.floor(media);
+        double mediaExpediente = media;
+
+        System.out.println("Nota media en el boletín: " + mediaBoletin);
+        System.out.println("Nota media en el expediente: " + mediaExpediente);
+        
 		sc.close();
 	}
 
